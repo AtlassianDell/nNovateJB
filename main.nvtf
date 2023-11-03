@@ -1,0 +1,16 @@
+GLOBAL DEFINE main.nvtf AS prgm WITHVARS{()} BEGIN[
+loop.while(1=1){
+  loop.for i=0, 1,000, i++ do{
+    restart
+    nonloop.query(WHEN booted){
+      bootloader\ROM.read
+      nASM{
+        EDIT bootload\ROM.read >> bootload\ROM.rw
+        WRITE bootload\ROM.rw\LINE-10 >> "BLOCKED PRGMLANGS: FALSE"
+        EDIT bootload\ROM.rw >> bootload\ROM.read
+        TEST bootload\ROM.read TESTBEGIN["RUN'cout << `Hello World!`'" IF RETURN "Hello World!" THEN "BOOT"]
+      }
+    }
+  }
+}
+]
