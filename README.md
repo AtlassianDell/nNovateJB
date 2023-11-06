@@ -2,17 +2,17 @@
 ## What is nNovateJB?
 nNovateJB (hereby nJB) is a jailbreak method for the Orion Instruments nNovate series.
 ## Which devices can run nJB?
-The ones that natively run it:
+### The ones that natively run it:
 - nNovate CX series
 - nNovate CX 2 series
 - nNovate CE series
 - nNovate E series
 - nNovate CAS series
-The ones that require the ".mark" file, requiring more work:
+### The ones that require the ".mark" file, requiring more work:
 - nNovate C series
 - nNovate NC series
 - nNovate Touch series (since its programming is weird)
-The ones that cannot run nJB:
+### The ones that cannot run nJB:
 - nNovate Touch 2 series (like really why does this look even worse than nT-Basic???)
 - nNovate Clickpad (it can't run programs)
 
